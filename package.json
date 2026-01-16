@@ -15,9 +15,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass sass/main.scss css/style.css -w"
   },
   "devDependencies": {
-    "@types/node-sass": "^4.11.8"
+    "sass": "^1.97.2"
   }
 }
