@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/sundeepamit/Natour#readme",
+  "bugs": {
+    "url": "https://github.com/sundeepamit/Natour/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sundeepamit/Natour.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node-sass": "^4.11.8"
+  }
+}
