@@ -1,0 +1,32 @@
+/* overall universal reset  */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /*content will shrink as border or padding is added*/
+}
+
+/* root font size */
+
+html{
+    /* this is bad practise if user change browser font size our website doesnot change it font. */
+    /* font-size: 10px; 1rem = 10px */
+    font-size: 62.5%; /*10px/16px*100*/
+}
+
+/* setting fonts  
+    this will be inherited by child elements
+*/
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    /*Multiple by predefine line-height*/
+    color: $color-gray-dark;
+    padding: 3rem;
+    box-sizing: border-box;
+
+}

@@ -1,0 +1,27 @@
+The 7-1 pattern (7 folders, 1 file) is a widely adopted architecture for organizing Sass projects into a scalable and maintainable structure. It involves separating your Sass partials into seven specific folders and importing them all into a single main file that is then compiled into a single CSS file. 
+Directory Structure
+sass/
+├── abstracts/
+├── base/
+├── components/
+├── layout/
+├── pages/
+├── themes/
+├── vendors/
+└── main.scss
+ 
+Folder Descriptions :
+abstracts/ (or utilities/): Contains all Sass tools and helpers used across the project. This folder typically does not output any CSS on its own.
+_variables.scss: Stores global variables for colors, fonts, etc.
+_mixins.scss: Houses reusable mixins.
+_functions.scss: Holds custom Sass functions.
+_placeholders.scss: Contains placeholder selectors (used with @extend).
+vendors/: For styles from external libraries and frameworks (e.g., Bootstrap, Normalize.css). You might also include overrides for these third-party styles here.
+base/: Contains the boilerplate and foundational styles for the project.
+_reset.scss or _normalize.scss: CSS resets.
+_typography.scss: Default typography rules.
+_base.scss: Default styles for standard HTML elements (e.g., body, h1, a).
+layout/: Manages the main structure or "macro" parts of the website, such as the grid system, header, footer, and navigation.
+components/: This is where the styles for reusable UI components or "widgets" are kept (e.g., buttons, forms, cards, modals). This is often the largest folder in a project.
+pages/: Holds page-specific styles that are only used on individual pages, such as a _home.scss or _contact.scss file. This is used for overrides and unique page layouts.
+themes/: Contains alternate styles for different themes (e.g., light/dark mode, admin theme). Many projects may not require this folder. 
