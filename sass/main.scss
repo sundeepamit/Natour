@@ -2,7 +2,12 @@
 $color-primary:#55c57a;
 $color-primary-light:#7ed56f;
 $color-primary-dark:#28b485;
+
+
 $color-gray-dark:#777;
+$color-white:#fff;
+$color-black:#000;
+
 /* overall universal reset  */
 *,
 *::after,
@@ -46,32 +51,35 @@ body {
     background-position: top;
     clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
     position: relative;
-}
 
-.header__logo-box{
+    // doing nesting here header__logo-box
+    &__logo-box{
     position: absolute;
     top: 4rem;
     left: 4rem;
+    }
+
+    &__logo{
+        height: 3.5rem;
+    }
+
+// /* .logo:hover{
+//     animation: moveInRight 1s ease-out;
+// } */
+
+    &__text-heading{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
 }
 
-.header__logo{
-    height: 3.5rem;
-}
-
-/* .logo:hover{
-    animation: moveInRight 1s ease-out;
-} */
-
-.header__text-heading{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 .heading-primary{
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
@@ -85,8 +93,8 @@ body {
     animation-name: moveInLeft;
     animation-duration: 0.9s;
     animation-timing-function: ease-out;
-    /* animation-delay: 2s;
-    animation-iteration-count: 3; */
+    // /* animation-delay: 2s;
+    // animation-iteration-count: 3; */
 }
 
 .heading-primary--sub{
@@ -149,11 +157,11 @@ body {
 }
 .btn:hover{
     transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
 }
 .btn:active{
     transform: translateY(-0.1rem);
-     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+     box-shadow: 0 .5rem 1rem rgba($color-black, 0.3);
 }
 .btn--white{
     background-color: white;
@@ -174,7 +182,7 @@ body {
 }
 
 .btn--white::after{
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .btn:hover::after{

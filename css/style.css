@@ -37,20 +37,14 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
-
 .header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-
 .header__logo {
   height: 3.5rem;
 }
-
-/* .logo:hover{
-    animation: moveInRight 1s ease-out;
-} */
 .header__text-heading {
   position: absolute;
   top: 40%;
@@ -74,8 +68,6 @@ body {
   animation-name: moveInLeft;
   animation-duration: 0.9s;
   animation-timing-function: ease-out;
-  /* animation-delay: 2s;
-  animation-iteration-count: 3; */
 }
 
 .heading-primary--sub {
