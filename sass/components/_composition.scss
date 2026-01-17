@@ -1,0 +1,33 @@
+.composition{
+    position: relative;
+    &__photo{
+        width: 55%;
+        border-radius: 2rem;
+        box-shadow: 0 1.5rem 5rem rgba($color-black, .4);
+        position: absolute;
+        z-index: 10; //used for image to always on top
+        outline-offset: .5rem;
+        transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+        &--p1{
+            left: 0;
+            top: -2rem ;
+        }
+         &--p2{
+            right: 0;
+            top: 2rem ;
+        }
+         &--p3{
+            left: 20%;
+            top: 10rem ;
+        }
+        &:hover{
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2rem 5rem rgba($color: $color-black, $alpha: .5);
+            z-index: 20;
+            outline: .5rem solid $color-primary;
+        }
+    }
+    &:hover &__photo:not(:hover){
+        transform: scale(.9);
+    }
+}
