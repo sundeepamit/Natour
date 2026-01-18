@@ -1,10 +1,10 @@
 .card{
-    height: 50rem;
+    height: 55rem;
     perspective: 150rem;
     position: relative;
     text-align: center;
     &__side{
-    height: 50rem;
+    height: 55rem;
     transition: all .8s cubic-bezier(0.215, 0.610, 0.355, 1);
     position: absolute;
     top:0;
@@ -64,6 +64,23 @@
         box-decoration-break: clone;
         &--1{
             background-image: linear-gradient(to right bottom,rgba($color-secondary-light,.85),rgba($color-secondary-dark,.85));
+        }
+    }
+    &__details{
+        padding: 3rem;
+        ul{
+            list-style: none;
+            width:80%;
+            margin: 0 auto;
+            li{
+                text-align: center;
+                font-size: 2rem;
+                
+                &:not(:last-child){
+                    padding: 1rem;
+                    border-bottom: .1rem solid $color-light-gray-2;
+                }
+            }
         }
     }
 }

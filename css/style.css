@@ -206,13 +206,13 @@ body {
 }
 
 .card {
-  height: 50rem;
+  height: 55rem;
   perspective: 150rem;
   position: relative;
   text-align: center;
 }
 .card__side {
-  height: 50rem;
+  height: 55rem;
   transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
   position: absolute;
   top: 0;
@@ -265,6 +265,22 @@ body {
 }
 .card__heading-span--1 {
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+}
+.card__details {
+  padding: 3rem;
+}
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.card__details ul li {
+  text-align: center;
+  font-size: 2rem;
+}
+.card__details ul li:not(:last-child) {
+  padding: 1rem;
+  border-bottom: 0.1rem solid #eee;
 }
 
 .composition {
