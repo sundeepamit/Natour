@@ -89,3 +89,19 @@
 
     
 }
+
+.btn-small{
+    &:link,&:visited{
+        text-decoration: 2px solid underline;
+        text-underline-offset: 7px;
+        color:$color-primary;
+        font-size: 2rem;
+        padding: 2px;
+        
+    }
+    &:hover{
+        background-color: $color-primary;
+        color: $color-white;
+
+    }
+}
