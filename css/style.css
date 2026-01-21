@@ -504,6 +504,54 @@ body {
   opacity: 1;
 }
 
+.footer {
+  background-color: #333333;
+  height: 50rem;
+}
+.footer__logo-box {
+  text-align: center;
+}
+.footer__logo {
+  margin-top: 10rem;
+  width: 15rem;
+  height: 11.9rem;
+}
+.footer__navigation {
+  border-top: 1px solid white;
+  margin-right: 3rem;
+  margin-top: 3rem;
+}
+.footer__list {
+  list-style: none;
+  font-size: 2rem;
+}
+.footer__item {
+  float: left;
+  transition: all 0.3s;
+}
+.footer__item:not(:last-child) {
+  margin-right: 2rem;
+}
+.footer__item:hover {
+  transform: scale(1.05) rotate(10deg);
+  box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.5);
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+.footer__link:hover {
+  color: #55c57a;
+}
+.footer__copyright {
+  margin-right: 3rem;
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  color: white;
+  border-top: 1px solid white;
+  padding: 2rem;
+}
+
 .story {
   width: 75%;
   margin: 0 auto;
